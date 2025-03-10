@@ -1,0 +1,35 @@
+<!--
+td,body { font: 11px Tahoma, Verdana,  Arial; color: white;}
+th { background-color: black; }
+.dlc { font: 11px  Tahoma, Verdana, Arial; font-weight: bold; }
+.index { font: 13px  Tahoma, Verdana, Arial;  }
+.smallHead { font: 12px Tahoma, Verdana, Arial; font-weight: bold; }
+.medHead { font: 14px Tahoma, Verdana, Arial; font-weight: bold; }
+.largeHead { font: 18px Tahoma, Verdana, Arial; font-weight: bold; }
+A:link, A:visited, A:active { color: rgb(182,82,84); text-decoration: none; } 
+A:hover { text-decoration: underline overline; color: rgb(232,132,134); }
+.light { background-color: #eeeeee; color: black; }
+.dark { background-color: #cccccc; color: white; }
+.box { background-color: #fdfdfd; font: 8pt Tahoma; border: 1px solid #bdbdbd; padding: 1px 1px 1px 1px; color: Black; scrollbar-face-color:#000000; }
+.entbox { background-color: #fdfdfd; font: 10pt Tahoma; border: 1px solid #bdbdbd; padding: 1px 1px 1px 1px; color: Black; scrollbar-face-color:#000000; }
+
+scrollbar-highlight-color:#FF0000;
+scrollbar-3dlight-color:#FF0000;
+scrollbar-darkshadow-color:#000000;
+scrollbar-shadow-color:#808080;
+scrollbar-arrow-color:#FFFFFF;
+scrollbar-track-color:#000000; }
+.boxHi { background-color: black; font: bold 8pt Tahoma; border: 2px solid red; padding: 2px 3px 1px 3px; color: Black; }
+.boxHi2 { background-color: #ffffff; font: bold 8pt Tahoma; border: 2px solid #bdbdbd; padding: 2px 3px 1px 3px; color: Black; }
+BODY {
+scrollbar-face-color:#000000;
+scrollbar-highlight-color:#FF0000;
+scrollbar-3dlight-color:#FF0000;
+scrollbar-darkshadow-color:#000000;
+scrollbar-shadow-color:#808080;
+scrollbar-arrow-color:#FFFFFF;
+scrollbar-track-color:#000000;
+background-color: black;
+font: font-color: orange;
+}
+-->

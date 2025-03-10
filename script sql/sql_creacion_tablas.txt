@@ -1,0 +1,198 @@
+CREATE TABLE cddatos (
+  codigo varchar(30) default NULL,
+  nombre varchar(200) default NULL
+) TYPE=MyISAM;
+
+#
+# Volcar la base de datos para la tabla `cddatos`
+#
+
+# --------------------------------------------------------
+
+#
+# Estructura de tabla para tabla `ficherossubidos`
+#
+
+CREATE TABLE ficherossubidos (
+  codigo varchar(20) NOT NULL default '',
+  ficherolocal varchar(200) default NULL,
+  ficheroservidor varchar(200) default NULL,
+  codigousuario tinyint(4) NOT NULL default '0',
+  codigoincidencia tinyint(4) default NULL,
+  fecha date default NULL,
+  hora time default NULL,
+  comentario blob,
+  PRIMARY KEY  (codigo)
+) TYPE=MyISAM;
+
+#
+# Volcar la base de datos para la tabla `ficherossubidos`
+#
+
+# --------------------------------------------------------
+
+#
+# Estructura de tabla para tabla `incidencias`
+#
+
+CREATE TABLE incidencias (
+  codigo tinyint(4) NOT NULL auto_increment,
+  fecha date default NULL,
+  codigousuario tinyint(4) NOT NULL default '0',
+  codigoprograma varchar(15) default NULL,
+  tipo varchar(50) NOT NULL default '',
+  resumen varchar(250) default NULL,
+  comentario blob NOT NULL,
+  resuelta smallint(6) default '0',
+  FechaResolucion date default NULL,
+  ComentarioResolucion blob,
+  hora time default NULL,
+  estado varchar(30) default 'Pendiente resolución',
+  PRIMARY KEY  (codigo)
+) TYPE=MyISAM;
+
+
+#
+# Estructura de tabla para tabla `peticionescompra`
+#
+
+CREATE TABLE peticionescompra (
+  codigo double NOT NULL default '0',
+  codigousuario double NOT NULL default '0',
+  fecha date default NULL,
+  hora time default NULL,
+  codigoprograma varchar(15) default NULL,
+  PRIMARY KEY  (codigo),
+  UNIQUE KEY codigo (codigo)
+) TYPE=MyISAM;
+
+#
+# Volcar la base de datos para la tabla `peticionescompra`
+#
+
+# --------------------------------------------------------
+
+#
+# Estructura de tabla para tabla `programas`
+#
+
+CREATE TABLE programas (
+  codigo varchar(15) NOT NULL default '',
+  nombre varchar(150) NOT NULL default '',
+  version varchar(15) default NULL,
+  so varchar(100) default NULL,
+  comentario blob,
+  tamano double default NULL,
+  precio double default NULL,
+  tipo varchar(30) default NULL,
+  finalizado smallint(6) default '0',
+  libre smallint(6) default '0',
+  fechacreacion date default NULL,
+  PRIMARY KEY  (codigo),
+  UNIQUE KEY nombre (nombre)
+) TYPE=MyISAM;
+
+#
+# Volcar la base de datos para la tabla `programas`
+#
+
+INSERT INTO programas VALUES ('eurocon', 'EuroConversor', '1.7.8', 'W98, WME, W2000, WXP', 'Conversor de euros a ptas y viceversa (no necesita instalación). Se puede minimizar en la barra de tareas (junto al reloj de Windows), se superpone a todas las ventanas, no ocupa espacio en la barra de tareas, ... (no necesita instalación)', '0.215', '0', 'Conversor', 1, 1, '2002-11-18');
+INSERT INTO programas VALUES ('pcu', 'PCU', '1.0', 'W95, W98, WME', 'Apaga, reinicia el PC o avisa con mensaje a una hora determinada (no necesita instalación)', '0.24', '0', 'Utilidad', 1, 1, '2002-11-18');
+INSERT INTO programas VALUES ('clave', 'Clave', '1.0', 'W95, W98, WME', 'No se podrá acceder a Windows si no se sabe la clave. Útil para añadir seguridad a este S.O. (no necesita instalación)', '0.225', '0', 'Seguridad', 1, 1, '2002-08-16');
+INSERT INTO programas VALUES ('zip', 'ZIP', '1.0', 'W95, W98, WME, W2000, WXP', 'Compresor ZIP, sin necesidad de tener WinZip instalado, ni librerías (no necesita instalación)', '0.281', '0', 'Compresión', 0, 1, '2002-11-18');
+INSERT INTO programas VALUES ('cdc', 'CoDeCo', '3.4.8', 'W95, W98, WME, W2000, WXP', 'Controla los CD\'s comprados de música, datos, MP3, ... A su vez controla también (con control de códigos de barras) los CD\'s prestados. Controla los libros leídos y adquiridos, Programas comprados, CD\'s mixtos de copias de seguridad de programas y música, ...', '13.3', '0', 'Gestión', 1, 1, '2002-11-17');
+INSERT INTO programas VALUES ('gdcdb', 'Generador de códigos de barras', '1.0.0', 'W95, W98, WME, W2000, WXP', 'Genera códigos de barras EAN 13 y EAN 8. Permite imprimirlos y guardarlos en fichero. (no necesita instalación)', '0.506', '0', 'Utilidad', 1, 1, '2002-11-18');
+INSERT INTO programas VALUES ('comfi', 'ComFi', '1.0.1', 'W95, W98, WME, W2000, WXP', 'Comprueba los ficheros nuevos introducidos en una ruta determinada, admite comodines. Se puede configurar el intervalo de comprobación, así como el mensaje a mostrar en caso de encontrar ficheros. Se puede minimizar en la barra de tareas (junto al reloj de Windows)', '0.344', '0', 'Utilidad', 1, 1, '2002-11-28');
+INSERT INTO programas VALUES ('vei', 'Ventas e Ingresos', '1.0.9', 'W95, W98, WME, W2000, WXP', 'Facturación lineal, diario, clientes, acreedores, gastos, presupuestos y notas de entrega (incluye programa de instalación)', '13', '90', 'Gestión', 1, 0, '2002-08-16');
+INSERT INTO programas VALUES ('cdca', 'Control de Campo', '6.9.6', 'W95, W98, WME, W2000, WXP', 'Control total para una empresa agrícola: control de tratamientos, control de abonados, partes de trabajo, meteorología y temperaturas, generación del CUA34 para pago obreros por banco, gastos generales, gastos comunes, gastos de fincas, gastos de sectores y variedades, pagos, cobros, facturación a clientes, vales de fruta, gastos de nueva inversión, gastos de maquinaria taller, horas trabajadas por maquinaria, ...', '0', '1200', 'Gestión', 1, 0, '2002-12-26');
+INSERT INTO programas VALUES ('gdt', 'Gestión de Transportes', '3.5.3', 'W95, W98, WME, W2000, WXP', 'Portes, reportes, viajes nacionales e internacionales, clientes, facturación a clientes, camioneros, camiones, consumo de combustible, totales mensuales y anuales (seguridad social, seguros, taller, km, consumo combustible, días, beneficio, autopistas, teléfono, impuestos,...)', '9.27', '660', 'Gestión', 1, 0, '2002-12-26');
+INSERT INTO programas VALUES ('ayt', 'Abonados y Tratamientos', '4.8.8', 'W95, W98, WME, W2000, WXP', 'Realización de planes de abonados y planes de tratamientos', '0', '270', 'Gestión', 1, 0, '2002-12-26');
+INSERT INTO programas VALUES ('cdsyb', 'Control de sueldos y billetes', '1.0.4', 'W95, W98, WME, W2000, WXP', 'Calcula los billetes y monedas necesarias para pagar a cada obrero en metálico. Tanto por obrero como en total', '5.86', '270', 'Gestión', 1, 0, '2002-12-26');
+INSERT INTO programas VALUES ('gdpf', 'Gestión de productos fitosanitarios', '1.3.0', 'W95, W98, WME, W2000, WXP', 'Listas de precios, control de stock en almacén, control de salidas a fincas, datos de los productos fitosanitarios y nutricionales (fabricante, distribuidor, precios, envases, formulación, tratamiento, peligrosidad, plazo de seguridad, ...)', '0', '570', 'Gestión', 1, 0, '2002-12-26');
+INSERT INTO programas VALUES ('cdiyr', 'Control de instalaciones y reparaciones', '3.5.4', 'W95, W98, WME, W2000, WXP', 'Para empresas que realizan instalaciones y mantenimiento de las mismas (partes de reparación, materiales empleados, clientes, instaladores, instalaciones,...)', '0', '180', 'Gestión', 1, 0, '2002-12-26');
+INSERT INTO programas VALUES ('vsycdc', 'Vehículos, seguros y consumo de combustible', '2.0.5', 'W95, W98, WME, W2000, WXP', 'Control del consumo de combustible y control de fechas de vencimientos de seguros para una flota de vehículos', '0', '90', 'Gestión', 1, 0, '2002-12-26');
+INSERT INTO programas VALUES ('rm', 'Reproductor Multimedia', '1.0.0.27', 'W95,W98,WME,W2000,WXP', 'Reproductor MP3, WAV, CD Música, Avi, MPEG, MIDI, ...', '252', '0', 'Multimedia', 0, 1, '2003-02-27');
+INSERT INTO programas VALUES ('gadt', 'Gestión Agencia de Transportes', 'ND', 'W95,W98,WME,W2000,WXP', 'Gestión Agencia de Transportes', '0', '0', 'Gestión', 0, 0, '2003-02-27');
+INSERT INTO programas VALUES ('cyc', 'Comerciales y Comisiones', '1.0.4.1230', 'W95,W98,WME,W2000,WXP', 'Comerciales y Comisiones', '0', '0', '', 0, 0, '2003-02-27');
+# --------------------------------------------------------
+
+#
+# Estructura de tabla para tabla `trucos`
+#
+
+CREATE TABLE trucos (
+  codigo tinyint(4) NOT NULL default '0',
+  titulo varchar(250) default NULL,
+  so varchar(200) default NULL,
+  comentario blob,
+  imagen blob,
+  fichero varchar(200) default NULL,
+  fecha date default NULL,
+  hora time default NULL,
+  codigousuario tinyint(4) default NULL,
+  PRIMARY KEY  (codigo)
+) TYPE=MyISAM;
+
+#
+# Volcar la base de datos para la tabla `trucos`
+#
+
+INSERT INTO trucos VALUES (1, 'Teclas de acceso rápido', 'W95, W98, WME, WXP, W2000', 'F1	Ayuda\r\nF2	Editar texto, cambiar nombre si está seleccionado un fichero o carpeta\r\nF3	Buscar (muestra el cuadro de diálogo Buscar). Si estás en Explorador de Windows o en el Escritorio mostrará la opción Buscar Archivos\r\nF4	Posiciona el cursor en la Barra de Direcciones y la despliega (Internet Explorer y Explorador de Windows). Sólo si está visible dicha barra.\r\nF5	Actualizar, refrescar\r\nF6	Cambia el foco entre los distintos marcos de la ventana activa (si estamos en Internet Explorer o Explorador de Windows)\r\nF10	Pasa el foco al menú de la ventana que tengamos abierta (si lo tiene)\r\nF11	Muestra la vista de Pantalla Completa (Internet Explorer y Explorador de Windows)\r\nImpr Pant	Copia la pantalla actual al portapales de Windows\r\nCtrl+Z	Deshacer (deshace la última acción)\r\nCtrl+Mays+Z	Rehacer (rehace la última acción deshecha)\r\nCtrl+E	Seleccionar todo (en el Explorador de Windows selecciona todos los ficheros de la carpeta actual)\r\nCtrl+C	Copiar selección (en el Explorador de Windows copiará los ficheros o carpetas seleccionados)\r\nCtrl+V	Pegar\r\nCtrl+X	Cortar\r\nCtrl+Alt+Sup	Abre el Administrador de tareas\r\nCtrl+Tab	En una ventana con pestañas cambia el foco a la siguiente pestaña activa\r\nCtrl+Tab+Mays	En una ventana con pestañas cambia el foco a la pestaña activa anterior\r\nCtrl+Alt+5	Muestra la letra Euro (€)\r\nCtrl+Alt+E	Muestra la letra Euro (€)\r\nCtrl+Alt	Equivalente a pulsar Alt Gr\r\nCtrl+F4	Cerrar la ventana actual (en programas con Interfaz de documentos múltiples (MDI) como M. Word)\r\nCtrl+Esc	Muestra el menú Inicio (como pulsar tecla de Windows)\r\nCtrl pulsado al arrastrar un archivo	Copia el archivo arrastrado\r\nCtrl+Mays al arrastrar un archivo	Crea un acceso directo del archivo arrastrado\r\nWindows		Abre menú Inicio\r\nWindows+E	Abre Explorador de Windows\r\nWindows+D	Minimiza/Maximiza todas las ventanas\r\nWindows+M	Minimiza todas las ventanas\r\nWindows+Mays+M	Vuelve al estado anterior antes de minimizar todas las ventanas\r\nWindows+R	Abre ventana Ejecutar\r\nWindows+F	Abre el Buscador de archivos o carpetas\r\nWindows+Tab	Permite moverse por las aplicaciones abiertas en la barra de tareas (sin llegar a mostrarlas hasta que no se pulse Intro o Espacio)\r\nWindows+Pausa	Abre Propiedades del Sistema\r\nAlt+F4	Salir de un programa o cerrar la ventana actual\r\nAlt+Barra espaciadora	Muestra el menú del sistema de la ventana actual (Minimizar, maximizar, ...)\r\nAlt+guión(-)	Muestra el menú del sistema de la ventana actual para aplicaciones MDI\r\nAlt+Tab		Cambia el foco a la siguiente ventana abierta\r\nAlt+Intro	Muestra las propiedades del objeto seleccionado (fichero, carpeta, unidad de disco, ...)\r\nAlt+Doble click	Muestra las propiedades del objeto seleccionado (fichero, carpeta, unidad de disco, ...)\r\nAlt+Tecla subrayada	Ejecuta la opción que lleve la tecla subrayada\r\nAlt+Fecla derecha	Avanzar a una vista anterior (sólo para Mi PC y Explorador de Windows)\r\nAlt+Fecla izquierda	Retroceder a una vista anterior (sólo para Mi PC y Explorador de Windows)\r\nAlt+Fecla abajo	Si el objeto activo es un desplegable lo despliega\r\nRetroceso	Ver la carpeta del nivel anterior (sólo para Mi PC y Explorador de Windows)\r\nTab	Cambia el foco al siguiente control activo\r\nTab+Mays	Cambia el foco al control activo anterior\r\nMay+F10		Equivalente a pulsar el botón derecho del ratón (menú contextual)\r\nMays+Sup	Elimina los ficheros/carpetas seleccionados permanentemente (no los envía a la papelera de reciclaje)\r\nMays pulsada mientras se introduce un CD/DVD evita que éste se autoreproduzca\r\nMays mientras se hace clic en el botón Cerrar	Cierra la carpeta actual y todas sus carpetas superiores\r\nMays pulsada y botón derecho ratón	Muestra la opción "Abrir con..." (sólo para Explorador de Windows)\r\nMays pulsada mientras arranca Windows	No ejecuta los acceso de Inicio\r\nDoble click en la barra de título	Maximiza/Restaura una ventana\r\nMays	En menú Apagar el Equipo de Windows XP, muestra la opción Hibernar (si está activa)\r\nMays pulsada mientras se pulsa Reiniciar	En menú Apagar de W95, W98, WME hace un reinicio corto (sin volver al menú de la BIOS)\r\n\r\n\r\nPARA OFFICE\r\n\r\nCtrl+Intro	Inserta un salto de página\r\nF7	Revisíon ortográfica\r\nF12	Mustra ventana de "Guardar como"\r\nMays+F3	Cambia el texto seleccionado de mayúsculas a minúsculas y viceversa\r\nMays+F7	Muestra los sinónimos de la palabra seleccionada\r\nMays pulsada mientras se abre un fichero Access	Muestra la ventana de Base de datos\r\nCtrl+<	Disminuye el tamaño de las palabras seleccionadas\r\nCtrl+Mays+>	Aumenta el tamaño de las palabras seleccionadas\r\nCtrl+N	Negrita/no negrita\r\nCtrl+S	Subrayado/no subrayado\r\nCtrl+K	Cursiva/no cursiva\r\nCtrl+K	Cursiva/no cursiva  ', NULL, '', '2003-02-24', '19:48:42', 1);
+INSERT INTO trucos VALUES (2, 'Apagar PC', 'W2000, WXP', 'Introduzca en un fichero BAT (proceso por lotes) la siguiente línea:\r\n\r\nC:\\WINDOWS\\system32\\rundll32.exe user32.exe,ExitWindows\r\n\r\nCambie "C:\\WINDOWS" por su directorio de Windows.', NULL, '', '2003-02-24', '21:19:20', 1);
+INSERT INTO trucos VALUES (3, 'Desactivar búsqueda en ficheros ZIP y CAB', 'WXP', 'Para desactivar busqueda en zip, abra el diálogo Ejecutar de Windows y pulse:\r\n\r\n  regsvr32 /u zipfldr.dll\r\n\r\nPara desactivar busqueda en cab:\r\n\r\n  regsvr32 /u cabview.dll\r\n\r\nPara activar busqueda en zip:\r\n\r\n  regsvr32 zipfldr.dll\r\n\r\nPara activar busqueda en cab:\r\n\r\n  regsvr32 cabview.dll', NULL, '', '2003-02-24', '21:21:17', 1);
+INSERT INTO trucos VALUES (4, 'a', 'a', 'a', NULL, 'a', '2003-02-24', '21:35:29', 8);
+# --------------------------------------------------------
+
+#
+# Estructura de tabla para tabla `usuarios`
+#
+
+CREATE TABLE usuarios (
+  codigo tinyint(4) NOT NULL auto_increment,
+  codigousuario varchar(15) NOT NULL default '',
+  dni varchar(15) default NULL,
+  nombre varchar(150) NOT NULL default '',
+  contrasena varchar(15) NOT NULL default '',
+  direccion varchar(100) default NULL,
+  localidad varchar(30) default NULL,
+  codigopostal smallint(5) default NULL,
+  provincia varchar(30) default NULL,
+  pais varchar(30) default NULL,
+  fechaalta date default NULL,
+  fechaultimavisita date default NULL,
+  email varchar(200) NOT NULL default '',
+  envioinformacion smallint(6) default '0',
+  tipo varchar(30) default 'Usuario',
+  horaultimavisita time default NULL,
+  numerovisitas double NOT NULL default '0',
+  PRIMARY KEY  (codigo),
+  UNIQUE KEY codigousuario (codigousuario),
+  UNIQUE KEY email (email)
+) TYPE=MyISAM;
+
+#
+# Volcar la base de datos para la tabla `usuarios`
+#
+
+INSERT INTO usuarios VALUES (1, 'aaa', 'aaa', 'aaa', 'aaa', 'Dr', 'SP', 30627, 'M', 'E', '2002-11-30', '2003-02-28', 'incidencias@ajpdsoft.com', 1, 'Administrador', '07:31:08', '84');
+# --------------------------------------------------------
+
+#
+# Estructura de tabla para tabla `usuariosprograma`
+#
+
+CREATE TABLE usuariosprograma (
+  codigoUsuario tinyint(4) NOT NULL default '0',
+  codigoPrograma varchar(15) NOT NULL default '',
+  comentario varchar(255) default NULL
+) TYPE=MyISAM;
+
+#
+# Volcar la base de datos para la tabla `usuariosprograma`
+#
+
+INSERT INTO usuariosprograma VALUES (1, 'cdca', NULL);
+INSERT INTO usuariosprograma VALUES (1, 'gdt', NULL);
+INSERT INTO usuariosprograma VALUES (1, 'vei', NULL);
+INSERT INTO usuariosprograma VALUES (1, 'cdiyr', NULL);
+INSERT INTO usuariosprograma VALUES (1, 'ayt', NULL);    

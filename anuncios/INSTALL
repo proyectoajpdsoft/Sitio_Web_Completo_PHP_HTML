@@ -1,0 +1,53 @@
+Note from the creator:
+
+Thanks for downloading the phProfession source. I hope you enjoy using the script as much
+as I have enjoyed creating it. Feel free to modify and enhance the code as much as you'd like.
+Drop me a note if you've done any cool things with the script, and I'll be sure to put
+a sign of recognition on phprofession.sourceforge.net.
+
+	Thanks!
+		Mykel Nahorniak
+		axion@betanews.com
+
+/////////////////////////////
+#############################
+#       phProfession        #
+# The Resume Posting Script #
+# Source by Mykel Nahorniak #
+#############################
+/////////////////////////////
+
+
+Requirements:
+-------------
+Apache Web server with PHP4
+mySQL database
+
+
+Installation:
+-------------
+1. Extract the files from the source archive into a directory off your Web server root.
+
+2. Create a mySQL database to store applicant information:
+
+mysql> CREATE DATABASE jobs;
+
+3. Edit the included mySQL dump file "Resume_Table.sql" to reflect your requirements, by adding or removing records from the "country", "industry", "salary" and other static tables.
+
+4. Create the database tables using the dump file:
+
+$ mysql -u <username> -p <password> <database> < jobs.sql
+
+5. Update the included configuration file "config.php" with username and password information - note that this user must have permission to INSERT, UPDATE and DELETE records from the database.
+
+6. Optionally, uncomment the authentication system in the script
+
+7. Browse to the URL 
+
+http://yourserver/phProfession_folder to begin using the application.
+
+
+Comments:
+---------
+
+All source by Mykel Nahorniak. 2001.

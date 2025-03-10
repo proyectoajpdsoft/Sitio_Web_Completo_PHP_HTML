@@ -1,0 +1,301 @@
+# Use this as a starting point to translate this application into
+# another language.  The format is "English text: translated text"
+# There cannot be a ":" in the English text.
+# Translated by: Yves Moenner <yves.moenner@mailcity.com> 
+# Checked by: Romuald Texier <romualdt@free.fr>
+# Last update: 22 May 2001
+
+# Title is what will appear in the title bar for pages
+Title: WebCalendar
+
+Month: Mois
+Week: Semaine 
+Error: Erreur
+
+Sun: Dim 
+Mon: Lun
+Tue: Mar
+Wed: Mer
+Thu: Jeu
+Fri: Ven
+Sat: Sam
+
+Sunday: Dimanche
+Monday: Lundi
+Tuesday: Mardi
+Wednesday: Mercredi
+Thursday: Jeudi
+Friday: Vendredi
+Saturday: Samedi
+
+January: Janvier
+February: F&eacute;vrier
+March: Mars
+April: Avril
+May_: Mai
+June: Juin
+July: Juillet
+August: Ao&ucirc;t
+September: Septembre
+October: Octobre
+November: Novembre
+December: D&eacute;cembre
+
+Jan: Jan
+Feb: F&eacute;v
+Mar: Mar
+Apr: Avr
+May: Mai
+Jun: Jun
+Jul: Jul
+Aug: Ao&ucirc;
+Sep: Sep
+Oct: Oct
+Nov: Nov
+Dec: D&eacute;c
+
+1st: 1er
+2nd: 2&egrave;me
+3rd: 3&egrave;me
+4th: 4&egrave;me
+5th: 5&egrave;me
+
+Generate printer-friendly version: G&eacute;n&eacute;rer une version imprimable
+Printer Friendly: Version imprimable
+Go: Go
+Back to My Calendar: Retour &agrave; mon Calendrier
+Another User's Calendar: Calendrier d'un autre utilisateur
+Search: Rechercher
+Add New Entry: Ajouter un rendez-vous
+New Entry: Nouveau rendez-vous
+Admin: Admin
+Preferences: Pr&eacute;f&eacute;rences
+Users: Utilisateurs
+Account: Compte
+Current User: Utilisateur actuel
+View this entry: Voir ce rendez-vous
+Private: Priv&eacute;
+This event is confidential: Cet &eacute;v&eacute;nement est confidentiel
+You have: Vous avez
+unapproved:en attente
+event: &eacute;v&eacute;nement
+events: &eacute;v&eacute;nements
+Go to: Aller &agrave;
+Help Index: Index de l'aide
+Error approving event: Erreur en approuvant l'&eacute;v&eacute;nement
+This user has: Cet utilisateur a
+calendar entries: entr&eacute;es dans le calendrier
+They must all be deleted (or this user removed as a participant) before this user can be deleted:Ils doivent &ecirc;tre tous d&eacute;truits (ou cet utilisateur retir&eacute; des participant) avant que cet utilisateur puisse &ecirc;tre d&eacute;truit
+The passwords were not identical: Les mots de passe ne sont pas identiques
+You have not entered a password: Vous n'avez pas saisi de mot de passe
+You have not entered a Brief Description: Vous n'avez pas saisi de description br&egrave;ve
+You have not entered a valid time of day: Vous n'avez pas saisi une heure de la journ&eacute;e correcte
+Brief Description: Description abr&eacute;g&eacute;e
+Full Description: Description compl&egrave;te
+Description: Description
+Date: Date
+Time: Heure
+am: am
+pm: pm
+Duration: Dur&eacute;e
+minutes: minutes
+Priority: Priorit&eacute;
+Low: Basse
+Medium: Moyenne
+High: Haute
+Access: Acc&egrave;s
+Public: Public
+Confidential: Confidentiel
+Participants: Participants
+Created by: Cr&eacute;&eacute; par
+Updated: Mise &agrave; jour
+Daily: Quotidien
+for weekly: type hebdomadaire
+by date: par date
+by day: par jour
+Monthly: Mensuel
+None: Aucun
+Repeat Day: R&eacute;p&eacute;titon du Jour
+Repeat End Date: Date de fin de r&eacute;p&eacute;tition
+Repeat Type: Type de r&eacute;p&eacute;tition
+Use end date: utiliser une date de fin
+every: tous
+Weekly: Hebdomadaire
+Yearly: Annuel
+Frequency: Fr&eacute;quence
+Save: Sauvegarder
+Cancel: Annuler
+Help: Aide
+Approve this entry?: Accepter cet &eacute;v&eacute;nement?
+Approve/Confirm: Approuver/Confirmer
+Approve/Confirm entry: Approuver/Confirmer cet &eacute;v&eacute;nement
+Reject: Rejeter
+Reject entry: Rejeter l'&eacute;v&eacute;nement
+Reject this entry?: Rejeter cet &eacute;v&eacute;nement?
+Rejected: Rejet&eacute;
+Edit entry: &Eacute;dition de l'&eacute;v&eacute;nement
+Edit Entry: &Eacute;dition de l'&eacute;v&eacute;nement
+Add Entry: Ajouter un &eacute;v&eacute;nement
+Are you sure you want to delete this entry?:Voulez vous vraiment supprimer cet &eacute;v&eacute;nement ?
+This will delete this entry for all users.:Ceci va supprimer cet &eacute;v&eacute;nement pour tous les utilisateurs.
+Delete: Supprimer
+Delete entry: Supprimer l'&eacute;v&eacute;nement
+You are not authorized to edit this entry: Vous n'&ecirc;tes pas autoris&eacute; &agrave; &eacute;diter cet &eacute;v&eacute;nement
+Scheduling Conflict: Conflit entre agendas
+The following conflicts with the suggested time: Ce qui suit est en conflit avec l'heure sugg&eacute;r&eacute;e.
+Unnamed Event: &Eacute;v&eacute;nement sans nom
+Hello: Bonjour
+A new appointment has been made for you by: Un nouveau rendez-vous vous est propos&eacute; par
+An appointment has been updated by: Un rendez-vous a &eacute;t&eacute; mis &agrave; jour par
+The subject is: Le sujet est
+Please look on: Veuillez consulter
+to accept or reject this appointment: pour accepter ou rejeter ce rendez-vous
+to view this appointment: pour voir ce rendez-vous
+Notification: Notification
+Your suggested time of: Votre suggestion de
+conflicts with the following existing calendar entries: est en conflit avec les rendez-vous suivants
+Edit User: &Eacute;diter un Utilisateur
+Add User: Ajouter un Utilisateur
+Username: Identifiant
+Login: Login
+Logout: Logout
+First Name: Pr&eacute;nom
+Last Name: Nom
+E-mail address: M&eacute;l
+Password: Mot de passe
+again: bis
+Yes: Oui
+No: Non
+Change Password: Changer de mot de passe
+New Password: Nouveau mot de passe
+Set Password: Fixer le mot de passe
+Adding/Editing Calendar Entries: Ajouter/&Eacute;diter un &Eacute;v&eacute;nement
+Unapproved Events: &Eacute;v&eacute;nements en attente
+No unapproved events: Pas d'&eacute;v&eacute;nement en attente
+You must enter a login and password: Vous devez entrer un login et un mot de passe
+Invalid login: Utilisateur incorrect
+Save login via cookies so I don't have to login next time: Sauvegarder le login dans un cookie, pour ne plus taper le login la prochaine fois
+cookies-note: <B>Note:</B> Cette application n&eacute;cessite l'activation des cookies.
+Invalid color for document background: Couleur de fond du document invalide
+Invalid color for document title: Couleur de Titre invalide
+Invalid color for table cell background: Couleur de fond de cellule invalide
+Invalid color for table cell background for today: Couleur de fond pour la cellule du jour, invalide
+Color format should be '#RRGGBB': Le format pour les couleurs doit &ecirc;tre du type '#RRVVBB'
+12 hour: 12 heures
+24 hour: 24 heures
+From: de
+to: &agrave;
+Select: S&eacute;lectionner
+Preferred view: Vue pr&eacute;f&eacute;r&eacute;e
+Week starts on: La semaine commence le
+Day: Jour
+days: jours
+Year: Ann&eacute;e
+before event: avant
+Reminder: Rappel
+This is a reminder for the event detailed below.: Ceci est un rappel avant l'&eacute;venement suivant.
+Document background: Fond
+Document title: Titre
+Table cell background: Fond de cellule
+Table cell background for current day: Fond de cellule pour aujourd'hui
+Save Preferences: Sauvegarder les pr&eacute;f&eacute;rences
+The following error occurred: L'erreur suivante est apparue
+Database error: Erreur de la base de donn&eacute;es
+Search: Rechercher
+Keywords: Mots cl&eacute;s
+You must enter one or more search keywords: Vous devez entrer un ou plusieurs mot(s) cl&eacute;(s) pour la recherche
+Search Results: R&eacute;sultats de la recherche
+Export: Exporter
+Export format: Format d'exportation
+Modified since: Modifi&eacute; depuis
+Start date: Date de d&eacute;but
+End date: Date de Fin
+Palm Pilot: Palm Pilot
+match found: &eacute;l&eacute;ment trouv&eacute;
+matches found: &eacute;l&eacute;ments trouv&eacute;s
+No matches found: Pas de r&eacute;sultat
+View Another User's Calendar: Regarder le calendrier d'un autre utilisateur
+You are not authorized: Vous n'&ecirc;tes pas autoris&eacute;(e)
+Add New User: Ajouter un nouvel utilisateur
+denotes administrative user: appliquer les droits d'administrateur
+Invalid entry id: Id invalide
+My Calendar: Mon Calendrier
+Add Layer: Ajouter une layer
+Add layer: Ajouter une Layer
+Disable Layers: D&eacute;sactiver les Layers
+Disabled: D&eacute;sactiv&eacute;s
+Edit Layers: &Eacute;diter les Layers
+Enable Layers: Activer les Layers
+Enabled: Activ&eacute;s
+hours: heures
+Layers are currently: Les Layers sont actuellement
+User: Utilisateur
+Color: Couleur
+Delete layer: Detruire une layer
+Edit layer: Editer une layer
+Edit Layer: Editer une Layer
+Invalid color: Couleur invalide
+Layer: Layer
+Layers: Layers
+Source: Source
+Show layer events that are the same as your own: Afficher les &eacute;venements de la layer correspondants aux votres
+Are you sure you want to delete this layer?: Etes vous sur de d&eacute;truire cette layer?
+Duplicates: Duplication
+Disabled for demo: D&eacute;sactiv&eacute; pour la demo
+
+Add to My Calendar: Ajouter dans mon calendrier
+An appointment has been canceled for you by: Un &eacute;venement a &eacute;t&eacute; annul&eacute; pour vous par
+An appointment has been rejected by: Un &eacute;venement a &eacute;t&eacute; rejet&eacute; par
+Do you want to add this entry to your calendar?: Voulez-vous ajouter cette &eacute;venement dans votre calendrier?
+Error adding event: Erreur en ajoutant un &eacute;venement
+Export all dates:Exportation de toutes les dates
+The subject was: Le sujet &eacute;tait
+The time you have entered begins before your preferred work hours.  Is this correct?:L'horaire entr&eacute; est en dehors des heures de travail. Est-ce correct?
+This is a private event and may not be added to your calendar.:Ceci est un &eacute;venement priv&eacute;, il ne peut &ecirc;tre ajout&eacute; dans votre calendrier.
+This will add the entry to your calendar.:Ceci ajoutera un &eacute;venement dans votre calendrier.
+This will delete the entry from your calendar.: Ceci d&eacute;truira l'&eacute;venement de votre calendrier.
+
+# Help text.  The left side is typically abbreviates since this can be long
+brief-description-help: Ceci doit &ecirc;tre une courte description (environ 20 caract&egrave;res) de l'&eacute;v&eacute;nement. Ceci repr&eacute;sentera l'&eacute;v&eacute;nement quand vous regarderez le calendrier.
+full-description-help: Ceci doit &ecirc;tre une description compl&egrave;te de l'&eacute;v&eacute;nement. Cette information sera vue par l'utilisateur quand celui-ci cliquera sur l'&eacute;v&eacute;nement.
+date-help: Sp&eacute;cification de la date de l'&eacute;v&eacute;nement.
+time-help: Sp&eacute;cification de l'heure de l'&eacute;v&eacute;nement.<BR><I>Ce champ peut &ecirc;tre laiss&eacute; vide.</I>
+duration-help: Sp&eacute;cification de la dur&eacute;e (en minutes) de l'&eacute;v&eacute;nement.  <BR><I>Ce champ peut &ecirc;tre laiss&eacute; vide.</I>
+priority-help: Sp&eacute;cification de la priorit&eacute; de l'&eacute;v&eacute;nement. Une haute priorit&eacute; sera affich&eacute;e en gras.
+access-help: Sp&eacute;cification du niveau d'acc&egrave;s de l'&eacute;v&eacute;nement.<BR> <I>Public</I>: Tout les utilisateurs peuvent voir les details de l'&eacute;v&eacute;nement.<BR><I>Confidentiel</I>: Les utilisateurs peuvent voir que vous avez un &eacute;v&eacute;nement pour cette date et heure, mais ils ne peuvent pas en consulter les d&eacute;tails.
+participants-help: Liste des participants pour cet &eacute;v&eacute;nement.
+repeat-type-help: S&eacute;lectionner la fr&eacute;quence de r&eacute;p&eacute;tition de l'&eacute;v&eacute;nement.<I>Mensuel (par jour)</I> autorise un &eacute;v&eacute;nement d'&ecirc;tre r&eacute;p&eacute;t&eacute; tous les premiers Lundi du mois, 3eme Jeudi du mois, etc.  <I>Mensuel (par date)</I> autorise un &eacute;v&eacute;nement d'&ecirc;tre r&eacute;p&eacute;t&eacute; le m&ecirc;me jour du mois.
+repeat-end-date-help: Sp&eacute;cifie la date de fin de r&eacute;p&eacute;tition de l'&eacute;v&eacute;nement.
+repeat-day-help: Sp&eacute;cifie quels jours de la semaine l'&eacute;v&eacute;nement doit &ecirc;tre r&eacute;p&eacute;t&eacute;.  Vous devez l'utiliser seulement si <I>Type de r&eacute;p&eacute;tition</I> est sur <I>Hebdomadaire</I>.
+repeat-frequency-help: Sp&eacute;cifie combien l'&eacute;v&eacute;nement doit &ecirc;tre r&eacute;p&eacute;t&eacute;.  La valeur par d&eacute;faut 1 indique que cela doit arriver &agrave; chaque fois.  Si vous choisissez 2 , cela indique que l'&eacute;v&eacute;nement doit arriver toutes les autres semaines (si <I>Type de r&eacute;p&eacute;tition</I> est sur <I>Hebdomadaire</I>), tous les autres Mois (si <I>Type de r&eacute;p&eacute;tition</I> est sur <I>Mensuel</I>), etc.
+Preferences: Pr&eacute;f&eacute;rences
+Settings: R&eacute;glages
+Language: Langage
+Your browser default language is: Le langage utilis&eacute; par votre navigateur est
+language-help: Sp&eacute;cifie le langage &agrave; utiliser.
+Preferred view: Vue pr&eacute;f&eacute;r&eacute;e
+preferred-view-help: Sp&eacute;cifie la vue par d&eacute;faut (par Jour, Semaine, Mois, ou Ann&eacute;e).
+Time format: Format de l'heure
+time-format-help: Sp&eacute;cifie quel format utiliser pour l'heure: <BR><I>12 heures:</I> Affiche l'heure de cette façon: 3am, 8:30pm, etc.  <BR><I>24 heures:</I> Affiche l'heure de cette façon 3:00, 20:30, etc.
+Display unapproved: Afficher les &eacute;v&eacute;nements en attente
+display-unapproved-help: Sp&eacute;cifie si vous voulez afficher dans votre calendrier les &eacute;v&eacute;nements en attente.<BR> Si vous choisissez "Oui", alors, les &eacute;v&eacute;nements en attente seront affich&eacute;s dans votre calendrier (dans une couleur diff&eacute;rente).<BR> Si vous choisissez "Non",  alors, les &eacute;v&eacute;nements en attente seront affich&eacute;s dans votre calendrier seulement quand vous les accepterez.
+Display icons: Afficher les icones
+display-icons-help: Affiche les icones &agrave; cot&eacute; de chaque &eacute;venement pour afficher, &eacute;diter ou d&eacute;truire.  Si "Non" est choisi, vous devez cliquer sur l'&eacute;venement pour pouvoir choisir ce que vous voulez en faire.
+Display week number: Afficher le num&eacute;ro de semaine
+display-week-number-help: Sp&eacute;cifie si le num&eacute;ro de la semaine (1-52) doit &ecirc;tre affich&eacute;.
+display-week-starts-on: Sp&eacute;cifie par quel jour commence la semaine.  Si Lundi est choisi, alors les num&eacute;ros des semaines seront &agrave; la norme ISO.
+Work hours: Heures de travail
+work-hours-help: Sp&eacute;cifie les heures de d&eacute;but et de fin de travail.
+Email: Couriel
+Event rejected by participant: Rendez-vous rejeter par un particcipant
+Event reminders: Rappel pour un rendez-vous
+Events added to my calendar: Rendez-vous ajouter dans votre agenda
+Events removed from my calendar: Rendez-vous supprimer dans votre agenda
+Events updated on my calendar: Rendez-vous modifier dans votre agenda
+email-event-reminders-help: Permet de d&eacute;finir si un couriel est envoy&eacute; ou non pour rapel du rendez-vous.
+email-event-added: Notification par couriel lors de l'ajout d'un rendez-vous dans votre agenda.
+email-event-updated: Notification par couriel lors de la modification d'un rendez-vous dans votre agenda.
+email-event-deleted: Notification par couriel lors de la suppression d'un rendez-vous dans votre agenda.
+email-event-rejected: Notification par couriel lors du rejet d'un rendez-vous par l'un des particcipants.
+Colors: Couleurs
+colors-help: Toutes les couleurs doivent &ecirc;tre au format hexd&eacute;cimal "#RRVVBB" ou "RR" est la valeur hexa pour le rouge, "VV" est la valeur hexa pour le vert, et "BB" est la valeur hexa pour le bleu.

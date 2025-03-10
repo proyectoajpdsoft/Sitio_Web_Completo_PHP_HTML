@@ -1,0 +1,43 @@
+body, td{
+font-family: Verdana, Arial, Geneva;
+font-size: 10px;
+color: #000000;
+line-height: 15px;
+}
+INPUT{
+font-family: Verdana, Arial, Geneva;
+font-size: 8pt;
+color: #000000;
+background-color: #FFFFCC
+}
+SELECT{
+font-family: Verdana, Arial, Geneva;
+font-size: 8pt;
+color: #000000;
+background-color: #FFFFCC
+}
+TEXTAREA{
+font-family: Verdana, Arial, Geneva;
+font-size: 8pt;
+color: #000000;
+background-color: #FFFFCC
+}
+
+A:link{
+font-family: Verdana, Arial, Geneva;
+font-size: 10px;
+color: #0000FF; text-decoration:none
+
+}
+A:visited{
+font-family: Verdana, Arial, Geneva;
+font-size: 10px;
+color: #000080; text-decoration:none
+
+}
+A:hover{
+font-family: Verdana, Arial, Geneva;
+font-size: 10px;
+color: #0000FF;
+text-decoration: underline; 
+}

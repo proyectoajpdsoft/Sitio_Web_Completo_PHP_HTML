@@ -1,0 +1,4 @@
+Usuario: administrador
+Contraseña: la mia
+Nombre base de datos: calendarioweb
+Ejecutar fichero de MySQL llamado tables-mysql.sql
